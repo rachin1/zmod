@@ -2,7 +2,7 @@
 
 F="/opt/klipper/klippy/mcu.py"
 
-sed -i 's|^TRSYNC_TIMEOUT.*|TRSYNC_TIMEOUT = 0.05|' $F
+sed -i 's|^TRSYNC_TIMEOUT.*|TRSYNC_TIMEOUT = 0.1|' $F
 sync
 find /opt/klipper/ -name __pycache__ -type d -exec rm -r "{}" \; 2>/dev/null
 sync
